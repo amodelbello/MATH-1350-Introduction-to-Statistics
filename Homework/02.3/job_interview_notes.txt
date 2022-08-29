@@ -1,0 +1,5 @@
+40, only the person they spent the most time with
+396, everyone they met
+40,only the most senior level person
+15, the person they had the best conversation with
+10, don't send thank you notes
