@@ -4,3 +4,6 @@
 auto/
 .DS_Store
 Book Data Sets/
+.idea
+.venv
+*.iml
