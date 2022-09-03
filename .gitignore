@@ -7,3 +7,4 @@ Book Data Sets/
 .idea
 .venv
 *.iml
+.ipynb_checkpoints/
