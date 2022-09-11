@@ -1,0 +1,10 @@
+Step 2:
+Based on the material in class I don't think we can conclude, generally, whether any statistics are useful or unuseful. Everything depends on context and the quality of the data.
+
+Important factors affecting the usefulness of statistics are the source of the data and how the data is presented. Statistics that are derived from wide, representative data sets that were obtained by impartial sources are more likely to accurately reflect the reality of their respective populations. Likewise, statistics that are presented in a clear and unbiased manner are also more likely to communicate insights that closely relate to the reality of their populations.
+
+Step 3:
+The distribution of the histogram appears normal and slightly skewed to the right.
+
+Step 4:
+There is an advantage to using bar charts over pie charts because it's easier to visually determine the differences in the data with a bar chart.
