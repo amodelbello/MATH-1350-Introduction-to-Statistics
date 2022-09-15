@@ -1,0 +1,137 @@
+\documentclass[12pt,fleqn]{article}
+\usepackage{
+  amsmath,
+  booktabs,
+  geometry,
+  graphicx,
+  microtype,
+  parskip,
+}
+\usepackage[shortlabels]{enumitem}
+
+\geometry{margin=3cm}
+
+% equation line spacing
+\setlength{\jot}{0.5cm}
+
+% meta data
+\newcommand{\chapter}{4.1}
+\newcommand{\authorname}{Amo DelBello}
+\newcommand{\classdescription}{MATH 1350-D2}
+\newcommand{\classname}{Introduction to Statistics, Fall 2022}
+\newcommand{\assignment}{\chapter\ Book Assignment}
+
+\newcommand{\problem}[1]{\vspace{5ex}\section*{\chapter-#1}}
+\newcommand{\thead}[1]{\textnormal{\textbf{#1}}}
+\newcommand{\tvspace}{\vspace{.25cm}}
+
+\title{\classdescription\ \\ \classname\ \\ $\ $ \\ \assignment}
+\author{\authorname}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+
+\problem{1}
+\begin{align*}
+  P(A) &= \frac{1}{1000} \\
+  P(\bar{A}) &= \frac{999}{1000} \\
+\end{align*}
+
+
+\problem{2}
+The probability of rain today is $\frac{1}{4}$, or $P(A) = 0.25$.
+
+
+\problem{3}
+The correct answer is \textbf{c}: 0.60 probably that it will rain somewhere in the author's region at some point during the day.
+
+
+\problem{4}
+I'd say maybe I successfully turn on a single light 3 time a day in my house. Light bulbs tend to last for several years, maybe like 5 years. So switching on a light 3 times a day for 5 years would be 5475 or around 5500.
+
+So the probability that the next time I turn on a light switch, I discover that a bulb does work would be:
+\begin{equation*}
+  P(\bar{A}) = \frac{5499}{5500}
+\end{equation*}
+
+
+\problem{5}
+Among the items listed, $0, \frac{3}{5}, 1, \text{and}~ 0.135$ are probabilities.
+
+
+\problem{9}
+(b) significantly high
+
+
+\problem{10}
+(c) neither significantly low nor significantly high
+
+
+\problem{11}
+(c) neither significantly low nor significantly high
+
+
+\problem{12}
+(a) significantly low
+
+
+\problem{21}
+There are 5 total false negatives in the entire sample of 555 subjects. If 1 of the total subjects was selected then the probability of selecting a subject that was a false negative would be:
+\begin{align*}
+  P(A) &= \frac{5}{555} \\
+  P(A) &= 0.00901
+\end{align*}
+The employer would suffer because they could possibly hire a drug user when their intent was to hire non-drug users.
+
+
+\problem{22}
+There are 25 total false positives in the entire sample of 555 subjects. If 1 of the total subjects was selected then the probability of selecting a subject that was a false positive would be:
+\begin{align*}
+  P(A) &= \frac{25}{555} \\
+  P(A) &= 0.045
+\end{align*}
+The job applicant would suffer from a false positive because they would be denied employment for being a drug user when they are not a drug user.
+
+
+\problem{23}
+There are 50 (45 true positive and 5 false negative) drug users in the sample. The probability of selecting a drug user would be:
+\begin{align*}
+  P(A) &= \frac{50}{555} \\
+  P(A) &= 0.0901
+\end{align*}
+The result does appear to be reasonable as an estimate of the ``prevalence rate'' described in the Chapter Problem.
+
+
+\problem{24}
+There are 505 (480 true negative and 25 false positive) non-drug users in the sample. The probability of selecting a non-drug user would be:
+\begin{align*}
+  P(A) &= \frac{505}{555} \\
+  P(A) &= 0.91
+\end{align*}
+The result does appear to be reasonable as an estimate of the ``prevalence rate'' described in the Chapter Problem, but rather the \textit{compliment} of the prevalence rate.
+
+
+\problem{30}
+The probability that a randomly selected passenger car crash results in a rollover can be expressed as:
+\begin{align*}
+  P(A) &= \frac{83600}{83600 + 5127400} \\
+  P(A) &= 0.016
+\end{align*}
+Since less than 1 in 50 crashes resulted in a rollover, it is unlikely for a car to roll over in a crash.
+
+
+\problem{37}
+I conclude that chance cannot be rejected as a reasonable explanation and, based on the study, we cannot reasonably assert pregnant women have the ability to predict the sex of their baby.
+
+
+\problem{38}
+I conclude that at a 0.0001 probability, chance should be rejected as a reasonable explanation for the difference in survival rates between seatbelt wearers and non-seatbelt wearers in head-on collisions, and that wearing a seatbelt improves the survival rate in head-on collisions.
+
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
