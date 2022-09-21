@@ -1,0 +1,76 @@
+\documentclass[12pt,fleqn]{article}
+\usepackage{
+  amsmath,
+  booktabs,
+  geometry,
+  graphicx,
+  microtype,
+  parskip,
+}
+\usepackage[shortlabels]{enumitem}
+
+\geometry{margin=3cm}
+
+% equation line spacing
+\setlength{\jot}{0.5cm}
+
+% meta data
+\newcommand{\chapter}{4.4}
+\newcommand{\authorname}{Amo DelBello}
+\newcommand{\classdescription}{MATH 1350-D2}
+\newcommand{\classname}{Introduction to Statistics, Fall 2022}
+\newcommand{\assignment}{\chapter\ Book Assignment}
+
+\newcommand{\problem}[1]{\vspace{5ex}\section*{\chapter-#1}}
+\newcommand{\thead}[1]{\textnormal{\textbf{#1}}}
+\newcommand{\tvspace}{\vspace{.25cm}}
+
+\title{\classdescription\ \\ \classname\ \\ $\ $ \\ \assignment}
+\author{\authorname}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+\problem{5}
+There are 10 different possibilities for each digit, so the total number of different possible pin numbers is $n_1 * n_2 * n_3 * n_4 = 10 * 10 * 10 * 10 = 10,000$. Because all of the pin numbers are equally likely, the probability of getting the correct pin number on the first attempt is:
+\begin{align*}
+\frac{1}{10,000}
+\end{align*}
+
+
+\problem{6}
+Since we are only dealing with the first 5 numbers of the social security number, the total number of different possibilities is $n_1 * n_2 * n_3 * n_4 * n_5 = 10 * 10 * 10 * 10 * 10 = 100,000$. Because all of the pin numbers are equally likely, the probability of getting the correct numbers on the first attempt is
+\begin{align*}
+\frac{1}{100,000}
+\end{align*}
+
+
+\problem{11}
+\begin{align*}
+~_nP_r &= \frac{n!}{(n - r)!} \\
+~_nP_r &= \frac{50!}{(50 - 5)!} \\
+~_nP_r &= \frac{3.041 * 10^{64}}{1.196 * 10^{56}} \\
+~_nP_r &= 254,251,200
+\end{align*}
+The chances of the 5 cities being selected in the correct order are:
+\begin{align*}
+  \frac{1}{254,251,200}
+\end{align*}
+
+
+\problem{19}
+Since we are dealing with 5 numbers of a zip code, the total number of different possibilities is $n_1 * n_2 * n_3 * n_4 * n_5 = 10 * 10 * 10 * 10 * 10 = 100,000$. Because all of the zip codes are equally likely, the probability of getting the correct zip code on the first attempt is
+\begin{align*}
+\frac{1}{100,000}
+\end{align*}
+
+
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
