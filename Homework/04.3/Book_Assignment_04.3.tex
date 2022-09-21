@@ -1,0 +1,179 @@
+\documentclass[12pt,fleqn]{article}
+\usepackage{
+  amsmath,
+  booktabs,
+  geometry,
+  graphicx,
+  microtype,
+  parskip,
+}
+\usepackage[shortlabels]{enumitem}
+
+\geometry{margin=3cm}
+
+% equation line spacing
+\setlength{\jot}{0.5cm}
+
+% meta data
+\newcommand{\chapter}{4.3}
+\newcommand{\authorname}{Amo DelBello}
+\newcommand{\classdescription}{MATH 1350-D2}
+\newcommand{\classname}{Introduction to Statistics, Fall 2022}
+\newcommand{\assignment}{\chapter\ Book Assignment}
+
+\newcommand{\problem}[1]{\vspace{5ex}\section*{\chapter-#1}}
+\newcommand{\thead}[1]{\textnormal{\textbf{#1}}}
+\newcommand{\tvspace}{\vspace{.25cm}}
+
+\title{\classdescription\ \\ \classname\ \\ $\ $ \\ \assignment}
+\author{\authorname}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+\problem{1}
+$\bar{A}$ is the event of not getting any defective iPhones when 3 are randomly selected with replacement from a batch.
+
+
+\problem{2}
+Both \textbf{(a)} and \textbf{(b)} are correct.
+
+
+\problem{6}
+The couple is equally likely to have a boy or a girl, regardless of how many children they already have.
+
+
+\problem{9}
+\begin{align*}
+  P(\bar{A}) &= 0.9^4 \\
+  P(\bar{A}) &= 0.6561 \\
+  P(A) &= 1 - 0.6561 \\
+  P(A) &= 0.344
+\end{align*}
+
+
+\problem{12}
+\begin{align*}
+  P(\bar{A}) &= {(1 - 0.67)}^4 \\
+  P(\bar{A}) &= 0.0119 \\
+  P(A) &= 1 - 0.0119 \\
+  P(A) &= 1 - 0.0119 \\
+  P(A) &= 0.989
+\end{align*}
+The result is not affected at all by the additional information that the survey subjects volunteered to respond.
+
+
+\problem{13}
+\begin{enumerate}[label=\alph*.]
+\item
+  \begin{align*}
+    P(A) &= \frac{27}{27 + 16} \\
+    P(A) &= 0.628
+  \end{align*}
+
+\item
+  \begin{align*}
+    P(A) &= \frac{16}{27 + 16} \\
+    P(A) &= 0.372
+  \end{align*}
+
+\item The preceding results suggest that when given quarters, students are more likely to purchase gum than keep it.
+\end{enumerate}
+
+
+\problem{14}
+\begin{enumerate}[label=\alph*.]
+\item
+  \begin{align*}
+    P(A) &= \frac{12}{12 + 34} \\
+    P(A) &= 0.261
+  \end{align*}
+
+\item
+  \begin{align*}
+    P(A) &= \frac{34}{12 + 34} \\
+    P(A) &= 0.739
+  \end{align*}
+
+\item The preceding results suggest that when given a \$1 bill, students are more likely to keep it than purchase gum.
+\end{enumerate}
+
+
+\problem{15}
+\begin{enumerate}[label=\alph*.]
+\item
+  ??? This is the same as 13(a)
+  \begin{align*}
+    P(A) &= \frac{27}{27 + 16} \\
+    P(A) &= 0.628
+  \end{align*}
+
+\item
+   ??? This is the same as 14(a)
+  \begin{align*}
+    P(A) &= \frac{12}{12 + 34} \\
+    P(A) &= 0.261
+  \end{align*}
+
+\item The preceding results suggest that a student is more likely to spend money on gum when given quarters, and less likely to spend it when given a \$1 dollar bill.
+\end{enumerate}
+
+
+\problem{16}
+\begin{enumerate}[label=\alph*.]
+\item
+  (okay I guess I'll just go with it then)
+  \begin{align*}
+    P(A) &= \frac{16}{27 + 16} \\
+    P(A) &= 0.372
+  \end{align*}
+
+\item
+  \begin{align*}
+    P(A) &= \frac{34}{12 + 34} \\
+    P(A) &= 0.739
+  \end{align*}
+
+\item The preceding results suggest that a student is more likely to keep the money when given a \$1 dollar bill, and less likely to keep it when given quarters.
+\end{enumerate}
+
+
+\problem{17}
+\begin{align*}
+  P(A) &= \frac{2}{2 + 1155} \\
+  P(A) &= 0.00173
+\end{align*}
+This case is problematic for test subjects because they will think they suffer from a disease they don't actually have. Thankfully, it would appear these cases are fairly rare.
+
+
+\problem{18}
+\begin{align*}
+  P(A) &= \frac{10}{10 + 335} \\
+  P(A) &= 0.0290
+\end{align*}
+Unfavorable consequences of this error are test subjects who consider themselves healthy, actually suffer from Hepatitis C.
+
+
+\problem{19}
+\begin{align*}
+  P(A) &= \frac{335}{2 + 335} \\
+  P(A) &= 0.994
+\end{align*}
+Based on the high result, the test appears to be effective.
+
+\problem{20}
+\begin{align*}
+  P(A) &= \frac{1153}{10 + 1153} \\
+  P(A) &= 0.991
+\end{align*}
+Based on the high result, the test also appears to be effective.
+
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
