@@ -1,0 +1,123 @@
+\documentclass[12pt,fleqn]{article}
+\usepackage{
+  amsmath,
+  amssymb,
+  booktabs,
+  geometry,
+  graphicx,
+  microtype,
+  parskip,
+  caption,
+}
+\usepackage[shortlabels]{enumitem}
+
+\geometry{margin=3cm}
+
+% equation line spacing
+\setlength{\jot}{0.5cm}
+
+% meta data
+\newcommand{\chapter}{6.4}
+\newcommand{\authorname}{Amo DelBello}
+\newcommand{\classdescription}{MATH 1350-D2}
+\newcommand{\classname}{Introduction to Statistics, Fall 2022}
+\newcommand{\assignment}{\chapter\ Book Assignment}
+
+\newcommand{\problem}[1]{\vspace{5ex}\section*{\chapter-#1}}
+\newcommand{\thead}[1]{\textnormal{\textbf{#1}}}
+\newcommand{\tvspace}{\vspace{.25cm}}
+
+\title{\classdescription\ \\ \classname\ \\ $\ $ \\ \assignment}
+\author{\authorname}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+
+\problem{1}
+The population must have a normal distribution or the sample must have a size of $n > 30$.
+
+
+\problem{2}
+No. As the population is normally distributed, the sample means can be treated as being from a normal distribution.
+
+
+\problem{3}
+$\mu_{\bar{x}}$ is the mean of all values of $\bar{x}$
+
+$\sigma_{\bar{x}}$ is the standard deviation of all values of $\bar{x}$
+
+$\mu_{\bar{x}} = \mu = 100$
+
+$\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}} = \frac{15}{\sqrt{64}} = \frac{15}{8} = 1.875$
+
+
+\problem{4}
+Yes, the distribution of incomes in the sample can be approximated by normal distribution because when the requirements of the Central Limit Theorem are met, when we collect samples and compute their means, those sample means tend to have a distribution that is normal.
+
+
+\problem{5}
+\begin{enumerate}[label=\alph*.]
+\item (via StatCrunch): 0.6844
+\item
+  \begin{align*}
+    \mu_{\bar{x}} &= \mu = 74.0 \\
+    \sigma_{\bar{x}} &= \frac{\sigma}{\sqrt{n}} = \frac{12.5}{\sqrt{16}} = \frac{12.5}{4} = 3.125 \\
+    \text{(via StatCrunch)} &= 0.9726
+  \end{align*}
+
+\item The normal distribution can be used for part be because the population is normally distributed.
+\end{enumerate}
+
+
+
+\problem{10}
+\begin{align*}
+  \mu_{\bar{x}} &= \mu = 174.0 \\
+  \sigma_{\bar{x}} &= \frac{\sigma}{\sqrt{n}} = \frac{39}{\sqrt{27}} = 7.51 \\
+  \text{(via StatCrunch)} &= 0.07145
+\end{align*}
+
+Using an outdated (lower) figure for the mean, yields a result that incorrectly gives a much lower probability of being over the capacity. If the lower mean is used, it could place people in danger.
+
+
+\problem{16}
+\begin{enumerate}[label=\alph*.]
+\item (via StatCrunch): 0.9579
+\item
+  \begin{align*}
+    \mu_{\bar{x}} &= \mu = 12.0 \\
+    \sigma_{\bar{x}} &= \frac{\sigma}{\sqrt{n}} = \frac{0.11}{\sqrt{36}} = 0.01833 \\
+    \text{(via StatCrunch)} &= 1
+  \end{align*}
+
+\item Given the result of part (b) it is probably not reasonable to believe that that cans are actually filled with a mean equal to 12.00 oz. As the actual mean appears to be higher than 12.00 oz, consumers are not being cheated.
+\end{enumerate}
+
+
+\problem{18}
+\begin{enumerate}[label=\alph*.]
+\item
+  \begin{align*}
+    \mu_{\bar{x}} &= \mu = 189.0 \\
+    \sigma_{\bar{x}} &= \frac{\sigma}{\sqrt{n}} = \frac{39}{\sqrt{50}} = 5.5154 \\
+    \text{(via StatCrunch)} &= 1
+  \end{align*}
+
+\item
+  \begin{align*}
+    \mu_{\bar{x}} &= \mu = 189.0 \\
+    \sigma_{\bar{x}} &= \frac{\sigma}{\sqrt{n}} = \frac{39}{\sqrt{14}} = 10.423  \\
+    \text{(via StatCrunch)} &= 0.9249
+  \end{align*}
+\end{enumerate}
+
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
