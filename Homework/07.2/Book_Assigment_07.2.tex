@@ -1,0 +1,98 @@
+\documentclass[12pt,fleqn]{article}
+\usepackage{
+  amsmath,
+  amssymb,
+  booktabs,
+  geometry,
+  graphicx,
+  microtype,
+  parskip,
+  caption,
+}
+\usepackage[shortlabels]{enumitem}
+
+\geometry{margin=3cm}
+
+% equation line spacing
+\setlength{\jot}{0.5cm}
+
+% meta data
+\newcommand{\chapter}{7.2}
+\newcommand{\authorname}{Amo DelBello}
+\newcommand{\classdescription}{MATH 1350-D2}
+\newcommand{\classname}{Introduction to Statistics, Fall 2022}
+\newcommand{\assignment}{\chapter\ Book Assignment}
+
+\newcommand{\problem}[1]{\vspace{5ex}\section*{\chapter-#1}}
+\newcommand{\thead}[1]{\textnormal{\textbf{#1}}}
+\newcommand{\tvspace}{\vspace{.25cm}}
+
+\title{\classdescription\ \\ \classname\ \\ $\ $ \\ \assignment}
+\author{\authorname}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+
+\problem{5}
+Since the distribution is not normal and the number of samples is < 30 neither the normal distribution nor the t distribution applies
+
+
+\problem{6}
+$\sigma$ is not known and $n > 30$ so we use the Student $t$ distribution which is 1.296.
+
+
+\problem{7}
+$\sigma$ is known and $n > 30$ so we use normal (z) distribution which is 2.576.
+
+
+\problem{10}
+$31.8 < \mu < 33.6$
+
+
+\problem{15}
+$1.8 < \mu < 3.4$ There is no practical use of the confidence interval because the numbers are just labels for nominal data.
+
+
+\problem{16}
+$5.0 < \mu < 7.7$ I'm not sure if the confidence interval can be used to describe arsenic levels in Arkansas. I don't know how much arsenic levels vary based on location or region. If location matters little, then the California confidence interval should be usable to describe arsenic levels in Arkansas, otherwise they should not.
+
+
+\problem{23}
+$3.7 < \mu < 4.2$ The confidence interval cannot tell us much about all students in Texas because it was only taken from one university in Austin.
+
+
+\problem{28}
+\textbf{Chips Ahoy regular:} $23.1 < \mu < 34.8$
+
+\textbf{Keebler cookies:} $29.2 < \mu < 31.6$
+
+The confidence interval for Keebler cookies is fully within the confidence interval for Chips Ahoy regular meaning that the population means could be the same.
+
+
+\problem{30}
+\begin{align*}
+  n &= {\left[\frac{Z_{\alpha/2} \sigma}{E}\right]}^2 \\
+  n &= {\left[\frac{2.33 (15)}{3}\right]}^2 \\
+  n &= 135.72 = 136
+\end{align*}
+I suppose the sample size is practical. 136 attorneys doesn't seem to be a huge amount to me.
+
+
+\problem{31}
+\begin{align*}
+  n &= {\left[\frac{Z_{\alpha/2} \sigma}{E}\right]}^2 \\
+  n &= {\left[\frac{1.96 (1)}{.01}\right]}^2 \\
+  n &= 38,416
+\end{align*}
+38,416 seems to be too high of a number of samples to be practical.
+
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
