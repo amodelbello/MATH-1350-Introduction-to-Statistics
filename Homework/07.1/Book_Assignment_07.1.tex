@@ -1,0 +1,150 @@
+\documentclass[12pt,fleqn]{article}
+\usepackage{
+  amsmath,
+  amssymb,
+  booktabs,
+  geometry,
+  graphicx,
+  microtype,
+  parskip,
+  caption,
+}
+\usepackage[shortlabels]{enumitem}
+
+\geometry{margin=3cm}
+
+% equation line spacing
+\setlength{\jot}{0.5cm}
+
+% meta data
+\newcommand{\chapter}{7.1}
+\newcommand{\authorname}{Amo DelBello}
+\newcommand{\classdescription}{MATH 1350-D2}
+\newcommand{\classname}{Introduction to Statistics, Fall 2022}
+\newcommand{\assignment}{\chapter\ Book Assignment}
+
+\newcommand{\problem}[1]{\vspace{5ex}\section*{\chapter-#1}}
+\newcommand{\thead}[1]{\textnormal{\textbf{#1}}}
+\newcommand{\tvspace}{\vspace{.25cm}}
+
+\title{\classdescription\ \\ \classname\ \\ $\ $ \\ \assignment}
+\author{\authorname}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+
+\problem{1}
+The confidence level was omitted.
+
+
+\problem{2}
+The statement means that the maximum likely difference between the sample proportion $\hat{p}$ and the population proportion $p$ is $\pm 4\%$.
+
+
+\problem{3}
+$\hat{p} = 0.14$, $\hat{q} = 0.86$, $n = 1000$, $E = 0.04$, $p = \hat{p} \pm 0.04$, $\alpha = 0.05$
+
+
+\problem{4}
+A 95\% confidence interval is greater than an 80\% confidence interval because as the confidence level increases, the width increases
+
+
+\problem{5}
+For 90\%, $z_{\alpha/2} = 1.645$
+
+
+\problem{6}
+For 99\%, $z_{\alpha/2} = 2.576$
+
+
+\problem{11}
+$0.0169 < p < 0.143$
+
+
+\problem{12}
+$0.197 < p < 0.343$
+
+
+\problem{13}
+\begin{enumerate}[label=\alph*.]
+\item $\hat{p} = 0.912$
+\item $E = 0.091$
+\item $0.062 < p < 0.121$
+\item We are 95\% confident that the interval from 0.062 to 0.121 actually does contain the true value of the population proportion $p$.
+\end{enumerate}
+
+
+\problem{19}
+\begin{enumerate}[label=\alph*.]
+\item $11.6\% < p < 22.4\%$
+\item Because the two confidence intervals overlap, it is possible that Burger King and Wendy's have the same rate of orders that are inaccurate. Neither restaurant appears to have a significantly better rate of accuracy of orders.
+\end{enumerate}
+
+
+\problem{22}
+\begin{enumerate}[label=\alph*.]
+\item 2455 subjects used at least one prescription medication.
+\item $0.805 < p < 0.829$
+\item The results tell us nothing about the proportion of college students who use at least one prescription medication, as it's a survey of adults aged 57 through 85, an age range that doesn't typically contain college students.
+\end{enumerate}
+
+
+\problem{25}
+\textbf{placebo:} $0.697\% < p < 4.49\%$
+
+\textbf{with drug:} $0.288\% < p < 1.57\%$
+
+Because the two confidence intervals overlap, there does not appear to be a significant difference between the rates of allergic reactions. Allergic reactions do not appear to be a concern for the drug users.
+
+\problem{29}
+$\hat{p} = \frac{18}{34}$
+
+$36.2\% < p < 69.7\%$
+
+Based on the results it does not appear that greater height is an advantage for presidential candidates because the confidence interval shows that the percentage of elections won by taller candidates is not likely to be substantially greater than those won by shorter candidates.
+
+
+\problem{33}
+\begin{enumerate}[label=\alph*.]
+\item
+  \begin{align*}
+    n &= \frac{{[z_{\alpha/2}]}^2 \hat{p} \hat{q}}{E^2} \\
+    n &= \frac{{[1.96]}^2(0.25)}{0.05^2} \\
+    n &= 384.16 = 385
+  \end{align*}
+\item
+  \begin{align*}
+    n &= \frac{{[z_{\alpha/2}]}^2 \hat{p} \hat{q}}{E^2} \\
+    n &= \frac{{[1.96]}^2(0.4)(0.6)}{0.05^2} \\
+    n &= 368.79 = 369
+  \end{align*}
+\item The knowledge in part (b) does not have much of an effect on the sample size.
+\end{enumerate}
+
+
+\problem{36}
+\begin{enumerate}[label=\alph*.]
+\item
+  \begin{align*}
+    n &= \frac{{[z_{\alpha/2}]}^2 \hat{p} \hat{q}}{E^2} \\
+    n &= \frac{{[2.56]}^2(0.25)}{0.02^2} \\
+    n &= 4096
+  \end{align*}
+\item
+  \begin{align*}
+    n &= \frac{{[z_{\alpha/2}]}^2 \hat{p} \hat{q}}{E^2} \\
+    n &= \frac{{[2.56]}^2(0.43)(.57)}{0.02^2} \\
+    n &= 4015.72 = 4016
+  \end{align*}
+\item The additional survey information from part (b) does not seem to have much of an effect on the sample size that is required.
+\end{enumerate}
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
