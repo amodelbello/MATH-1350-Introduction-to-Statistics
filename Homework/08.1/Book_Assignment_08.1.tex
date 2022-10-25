@@ -1,0 +1,118 @@
+\documentclass[12pt,fleqn]{article}
+\usepackage{
+  amsmath,
+  amssymb,
+  booktabs,
+  geometry,
+  graphicx,
+  microtype,
+  parskip,
+  caption,
+}
+\usepackage[shortlabels]{enumitem}
+
+\geometry{margin=3cm}
+
+% equation line spacing
+\setlength{\jot}{0.5cm}
+
+% meta data
+\newcommand{\chapter}{8.1}
+\newcommand{\authorname}{Amo DelBello}
+\newcommand{\classdescription}{MATH 1350-D2}
+\newcommand{\classname}{Introduction to Statistics, Fall 2022}
+\newcommand{\assignment}{\chapter\ Book Assignment}
+
+\newcommand{\problem}[1]{\vspace{5ex}\section*{\chapter-#1}}
+\newcommand{\thead}[1]{\textnormal{\textbf{#1}}}
+\newcommand{\tvspace}{\vspace{.25cm}}
+
+\title{\classdescription\ \\ \classname\ \\ $\ $ \\ \assignment}
+\author{\authorname}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+
+\problem{1}
+Rejection of the Bayer aspirin claim would have more serious implications because aspirin is a drug. I imagine giving someone the wrong dose of aspirin could cause them adverse health effects. It would probably be safer to use a smaller significance level for hypothesis tests about the mean of aspirin compared to vitamin C.
+
+
+\problem{2}
+An estimate is the process of estimating a population parameter based on what's known about a sample. A hypothesis test is the process of rejecting or not rejecting a hypothesis about a population.
+
+
+\problem{3}
+\begin{enumerate}[label=\alph*.]
+\item The null hypothesis is that the mean is equal to 174.1 cm, denoted $H_0:\mu = 174.1\text{cm}$.
+\item The alternative hypothesis is that the mean does not equal 174.1 cm, denoted $H_0:\mu \ne 174.1\text{cm}$.
+\item The possible conclusions are to reject, or fail to reject the null hypothesis.
+\item No. The best you can do is \textit{there is not significant evidence to reject the claim}.
+\end{enumerate}
+
+
+\problem{5}
+\begin{enumerate}[label=\alph*.]
+\item $p > 0.5$
+\item Null hypothesis $H_0: p = 0.5$, Alternative hypothesis $H_1: p > 0.5$
+\end{enumerate}
+
+
+\problem{7}
+\begin{enumerate}[label=\alph*.]
+\item $\mu = 69 \text{~bpm}$
+\item Null hypothesis $H_0: \mu = 69 \text{~bpm}$, Alternative hypothesis $H_1: \mu \ne 69 \text{~bpm}$
+\end{enumerate}
+
+
+\problem{9}
+The rate of 59\% is significantly high. The original claim cannot be rejected.
+
+\problem{11}
+The rate of 69 bpm does not differ significantly from 69.6 bpm. The original claim cannot be rejected.
+
+
+\problem{15}
+\begin{align*}
+  t &= \frac{\bar{x} - \mu}{\frac{s}{\sqrt{n}}} \\
+  t &= \frac{69.6 - 69}{\frac{11.3}{\sqrt{153}}} \\
+  t &= 0.657
+\end{align*}
+
+
+\problem{20}
+\begin{enumerate}[label=\alph*.]
+\item Two-tailed test
+\item p-value = 0.05238
+\item Reject $H_0$
+\end{enumerate}
+
+
+\problem{22}
+\begin{enumerate}[label=\alph*.]
+\item Critical value: -1.645
+\item We should reject $H_0$.
+\end{enumerate}
+
+
+\problem{23}
+\begin{enumerate}[label=\alph*.]
+\item Critical value: $\pm 1.96$
+\item We should reject $H_0$.
+\end{enumerate}
+
+
+\problem{29}
+\textbf{Type I Error:} In reality $p = 0.1$, but sample evidence leads us to reject that claim.
+
+\textbf{Type II Error:} In reality $p \ne 0.1$, but we fail to reject the claim that $p = 0.1$
+
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
