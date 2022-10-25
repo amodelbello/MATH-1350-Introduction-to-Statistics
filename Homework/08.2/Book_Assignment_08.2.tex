@@ -1,0 +1,118 @@
+\documentclass[12pt,fleqn]{article}
+\usepackage{
+  amsmath,
+  amssymb,
+  booktabs,
+  geometry,
+  graphicx,
+  microtype,
+  parskip,
+  caption,
+}
+\usepackage[shortlabels]{enumitem}
+
+\geometry{margin=3cm}
+
+% equation line spacing
+\setlength{\jot}{0.5cm}
+
+% meta data
+\newcommand{\chapter}{8.2}
+\newcommand{\authorname}{Amo DelBello}
+\newcommand{\classdescription}{MATH 1350-D2}
+\newcommand{\classname}{Introduction to Statistics, Fall 2022}
+\newcommand{\assignment}{\chapter\ Book Assignment}
+
+\newcommand{\problem}[1]{\vspace{5ex}\section*{\chapter-#1}}
+\newcommand{\thead}[1]{\textnormal{\textbf{#1}}}
+\newcommand{\tvspace}{\vspace{.25cm}}
+
+\title{\classdescription\ \\ \classname\ \\ $\ $ \\ \assignment}
+\author{\authorname}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+
+\problem{6}
+\begin{enumerate}[label=\alph*.]
+\item Right-tailed
+\item $z = 2.921$
+\item P-value = 0.0017
+\item The null hypothesis is $H_0: p = 0.25$. Because the P-value of 0.0017 is less than or equal to the significance level of $\alpha = 0.05$, we reject the null hypothesis.
+\item Because we reject $H_0: p = 0.25$, we support the alternative hypothesis of $p > 0.25$.
+\end{enumerate}
+
+\problem{7}
+\begin{enumerate}[label=\alph*.]
+\item Two-tailed
+\item $z = -1.69$
+\item P-value = 0.091
+\item The null hypothesis is $H_0: p = 0.92$. Because the P-value of 0.091 is greater than the significance level of $\alpha = 0.05$, we fail to reject the null hypothesis.
+\item We cannot reject the claim that 92\% of adults own cell phones.
+\end{enumerate}
+
+
+\problem{11}
+\begin{enumerate}[label=\alph*.]
+\item $H_0: p = 0.5$
+\item $H_1: p \ne 0.5$
+\item $z = 2.69$
+\item P-value = 0.0071
+\item Because the P-value of 0.0071 is less than or equal to the significance level of $\alpha = 0.01$, we reject the null hypothesis.
+\item We reject the claim and support the alternative hypothesis of $p \ne 0.5$. We conclude the politician is wrong.
+\end{enumerate}
+
+
+\problem{12}
+\begin{enumerate}[label=\alph*.]
+\item $H_0: p = 0.24$
+\item $H_1: p \ne 0.24$
+\item $z = 0.702$
+\item P-value = 0.4824
+\item Because the P-value of 0.4824 is greater than the significance level of $\alpha = 0.05$, we cannot reject the null hypothesis.
+\item We cannot reject the null hypothesis. The Mars company should not take corrective action.
+\end{enumerate}
+
+
+\problem{15}
+\begin{enumerate}[label=\alph*.]
+\item $H_0: p = 0.15$
+\item $H_1: p < 0.15$
+\item $z = -1.31$
+\item P-value = 0.0956
+\item Because the P-value of 0.09 is greater than the significance level of $\alpha = 0.01$, we cannot reject the null hypothesis.
+\item We cannot reject the null hypothesis and therefore cannot support the claim that the return rate is less than 15\%.
+\end{enumerate}
+
+
+\problem{26}
+\begin{enumerate}[label=\alph*.]
+\item $H_0: p = 0.5$
+\item $H_1: p > 0.5$
+\item $z = -0.0594$
+\item P-value = 0.2031
+\item Because the P-value of 0.2031 is greater than the significance level of $\alpha = 0.05$, we cannot reject the null hypothesis.
+\item We cannot reject the null hypothesis and therefore cannot support the claim that the majority of those in the study continue to smoke. The results do not suggest that the nicotine path therapy is not effective.
+\end{enumerate}
+
+
+\problem{29}
+\begin{enumerate}[label=\alph*.]
+\item $H_0: p = 0.5$
+\item $H_1: p > 0.5$
+\item $z = 40.90$
+\item P-value = <0.001
+\item Because the P-value of <0.001 is less than or equal to the significance level of $\alpha = 0.01$, we reject the null hypothesis.
+\item We cannot reject the null hypothesis and support the claim that most people believe that the Loch Ness Monster exists. However our conclusion may be be erroneous as we sample group was self selecting.
+\end{enumerate}
+
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
