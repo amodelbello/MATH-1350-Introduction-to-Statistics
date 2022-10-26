@@ -1,0 +1,99 @@
+\documentclass[12pt,fleqn]{article}
+\usepackage{
+  amsmath,
+  amssymb,
+  booktabs,
+  geometry,
+  graphicx,
+  microtype,
+  parskip,
+  caption,
+}
+\usepackage[shortlabels]{enumitem}
+
+\geometry{margin=3cm}
+
+% equation line spacing
+\setlength{\jot}{0.5cm}
+
+% meta data
+\newcommand{\chapter}{8.3}
+\newcommand{\authorname}{Amo DelBello}
+\newcommand{\classdescription}{MATH 1350-D2}
+\newcommand{\classname}{Introduction to Statistics, Fall 2022}
+\newcommand{\assignment}{\chapter\ Book Assignment}
+
+\newcommand{\problem}[1]{\vspace{5ex}\section*{\chapter-#1}}
+\newcommand{\thead}[1]{\textnormal{\textbf{#1}}}
+\newcommand{\tvspace}{\vspace{.25cm}}
+
+\title{\classdescription\ \\ \classname\ \\ $\ $ \\ \assignment}
+\author{\authorname}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+
+\problem{1}
+The sample must be a simple random sample and either the population must be normally distributed or $n > 30$.
+
+It's not clear if the sample is a simple random sample. It just says 12 different video games were observed. Additionally, the data is not normally distributed (verified with QQ Plot in StatCrunch), nor is $n > 30$. Therefore the requirements are not satisfied to test the claim.
+
+
+\problem{6}
+P-value = 0.04374
+
+
+\problem{13}
+\begin{enumerate}[label=\alph*.]
+\item $H_0: \mu = 4.00$, $H_1: \mu \ne 4.00$
+\item $t: -1.638$
+\item P-value: 0.1049
+\item Because the P-value of 0.1049 is greater than the significance level of $\alpha = 0.05$, we fail to reject the null hypothesis. We cannot reject the claim that the population of student course evaluations has a mean equal to 4.00.
+\end{enumerate}
+
+
+\problem{14}
+\begin{enumerate}[label=\alph*.]
+\item $H_0: \mu = 7.00$, $H_1: \mu < 7.00$
+\item $t: -5.742$
+\item P-value: <0.0001
+\item Because the P-value of <0.0001 is less than the significance level of $\alpha = 0.01$, we reject the null hypothesis and support the claim that the population mean of ``attractive'' ratings is less than 7.00.
+\end{enumerate}
+
+
+\problem{19}
+\begin{enumerate}[label=\alph*.]
+\item $H_0: \mu = 12.00 \text{~ounces}$, $H_1: \mu \ne 12.00 \text{~ounces}$
+\item $t: 10.364$
+\item P-value: <0.0001
+\item Because the P-value of <0.0001 is less than the significance level of $\alpha = 0.05$, we reject the null hypothesis that the mean volume of cans of coke is 12.00 ounces. However, as the population mean appears to be more than 12.00 ounces ($12.153 < \mu < 12.227$), we can conclude that customers are not being cheated.
+\end{enumerate}
+
+
+\problem{21}
+\begin{enumerate}[label=\alph*.]
+\item $H_0: \mu = 14 \mu \text{g} / \text{g}$, $H_1: \mu \text{g} / \text{g}$
+\item $t: -1.444$
+\item P-value: 0.0913
+\item Because the P-value of 0.0913 is greater than the significance level of $\alpha = 0.05$, we fail to reject the null hypothesis. We cannot support the claim that the mean lead concentration is less than $14 \mu \text{g} / \text{g}$.
+\end{enumerate}
+
+
+\problem{28}
+\begin{enumerate}[label=\alph*.]
+\item $H_0: \mu = 90 \text{mm~Hg}$, $H_1: \mu < 90 \text{mm~Hg}$
+\item $t: -19.265$
+\item P-value: <0.0001
+\item Because the P-value of <0.0001 is less than the significance level of $\alpha = 0.05$, we reject the null hypothesis that the mean diastolic blood pressure is 90 mm Hg and can support a claim that the mean diastolic blood pressure for males is less than 90 mm Hg. However, based on this data we cannot make any claim about any individual person and whether they have high blood pressure.
+\end{enumerate}
+
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
