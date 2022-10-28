@@ -1,0 +1,117 @@
+\documentclass[12pt,fleqn]{article}
+\usepackage{
+  amsmath,
+  booktabs,
+  geometry,
+  graphicx,
+  microtype,
+  hyperref,
+  xcolor,
+}
+\usepackage[shortlabels]{enumitem}
+\usepackage[skip=14pt plus1pt]{parskip}
+
+\geometry{margin=3cm}
+
+% equation line spacing
+\setlength{\jot}{0.5cm}
+
+% meta data
+\newcommand{\chapter}{Project Part 2 \-- Hypothesis Testing}
+\newcommand{\authorname}{Amo DelBello}
+\newcommand{\classdescription}{MATH 1350-D2}
+\newcommand{\classname}{Introduction to Statistics, Fall 2022}
+\newcommand{\assignment}{Demonstrate: \chapter}
+
+\newcommand{\problem}[1]{\vspace{5ex}\section*{\chapter-#1}}
+\newcommand{\thead}[1]{\textnormal{\textbf{#1}}}
+\newcommand{\tvspace}{\vspace{.25cm}}
+
+% Set up TOC and reference links
+\definecolor{linkColor}{HTML}{000000}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkColor,
+    filecolor=magenta,
+    urlcolor=linkColor,
+    pdftitle={MWWC Union Bylaws},
+    pdfauthor={MWWC}
+    pdfpagemode=FullScreen,
+}
+\let\oldhref\href
+\renewcommand{\href}[2]{\oldhref{#1}{\bfseries#2}}
+
+
+\title{\classdescription\ \\ \classname\ \\ $\ $ \\ \assignment}
+\author{\authorname}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Data Used For The Hypothesis Test}
+For Part 2 of this project I will continue with the \textbf{NutritionDataFastFood2017.xlsx} data set. I will do a hypotheses test and confidence interval based on the fat content of the fast food menu items.
+
+The data provides calories per item and fat content per item in grams. As 1 gram of fat contains 9 calories, we can determine the percentage of fat calories per item with the following formula.
+
+\begin{equation}
+  \text{Fat Content \%} = \frac{\text{Fat (g)} * 9}{\text{Serving Size (g)}} * 100
+\end{equation}
+
+The mean of this data across all items and fast food restaurants in the data available to us is \textbf{46.1\%}.
+
+According to the \href{https://www.cdc.gov/nchs/fastats/diet.htm}{\underline{CDC}} in \href{https://www.cdc.gov/nchs/data/hus/2020-2021/McrNutr.pdf}{\underline{this study}}, the average percentage of fat intake of adults over 20 in the United States from 2015\--2018 was \textbf{35.8\%}.
+
+Using this data we will test the following hypothesis: \textbf{A diet consisting of food from the 12 fast food restaurants available in our data is higher in fat than the average American diet.}
+
+
+\section{The Hypothesis Test}
+
+\subsection{Requirements}
+\begin{enumerate}
+\item \textbf{The sample is a simple random sample:} As this data comes from a reputable study and was provided for this exercise we can conclude that the nutritional data for each restaurant is a simple random sample.
+  \item \textbf{Either or both of these conditions are satisfied: The population is normally distributed or $n >$ 30:} It's probable that our population mean comes from randomly distributed data, but we can rest assured this requirement is met as our sample size is 126, well beyond the threshold of 30.
+\end{enumerate}
+
+\subsection{Data Used For Hypothesis}
+\begin{align*}
+  n &= 126 \\
+  \bar{x} &= 46.1\% \\
+  s &= 11.68266 \\
+  \mu_{\bar{x}} &= 35.8\%
+\end{align*}
+
+\subsection{Null \& Alternative Hypotheses}
+\begin{align*}
+  H_0: \mu &= 35.8 \\
+  H_1: \mu &> 35.8
+\end{align*}
+Our claim is the alternative hypothesis, that the sample mean is greater than the population mean.
+
+\subsection{Critical Value \& Test Statistic}
+Using Statdisk Hypothesis Testing: Mean One Sample, we find:
+
+\textbf{Test Statistic, t:} 9.896
+
+\textbf{Critical t:} 1.657
+
+
+\subsection{Decision \& Summary}
+This is a right-tailed test so we use the critical value of $t = 1.657$. The test statistic of $t = 9.896$ is well within the critical region, therefore we reject the null hypothesis.
+
+\textbf{We conclude that the fat content of a diet consisting of items from the 12 fast food restaurants in our data is greater than the fat content of the average American diet.}
+
+\section{Confidence Interval}
+Using Statdisk Confidence Intervals: Mean One Sample, with a 95\% confidence level, we get a confidence interval of:
+\begin{equation*}
+  44.04018 < \mu < 48.15982
+\end{equation*}
+
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

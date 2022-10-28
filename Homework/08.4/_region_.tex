@@ -1,0 +1,84 @@
+\message{ !name(Book_Assignment_08.4.tex)}\documentclass[12pt,fleqn]{article}
+\usepackage{
+  amsmath,
+  amssymb,
+  booktabs,
+  geometry,
+  graphicx,
+  microtype,
+  parskip,
+  caption,
+}
+\usepackage[shortlabels]{enumitem}
+
+\geometry{margin=3cm}
+
+% equation line spacing
+\setlength{\jot}{0.5cm}
+
+% meta data
+\newcommand{\chapter}{8.4}
+\newcommand{\authorname}{Amo DelBello}
+\newcommand{\classdescription}{MATH 1350-D2}
+\newcommand{\classname}{Introduction to Statistics, Fall 2022}
+\newcommand{\assignment}{\chapter\ Book Assignment}
+
+\newcommand{\problem}[1]{\vspace{5ex}\section*{\chapter-#1}}
+\newcommand{\thead}[1]{\textnormal{\textbf{#1}}}
+\newcommand{\tvspace}{\vspace{.25cm}}
+
+\title{\classdescription\ \\ \classname\ \\ $\ $ \\ \assignment}
+\author{\authorname}
+\date{\today}
+
+
+\begin{document}
+
+\message{ !name(Book_Assignment_08.4.tex) !offset(-3) }
+
+
+\maketitle
+
+
+\problem{1}
+The requirements are that the sample is a simple random sample and that the population has a normal distribution.
+
+The normality requirement for a hypothesis test of a claim about a standard deviation is more strict than that of a hypothesis test of a claim about a mean. It requires that the distribution of the population be much closer to a normal distribution.
+
+
+\problem{8}
+\begin{enumerate}[label=\alph*.]
+  \item $H_0: \sigma = 660.2 \text{~hg}$
+  \item $H_1: \sigma \ne 660.2 \text{~hg}$
+  \item $X^2 = 45.780$
+  \item P-value = 0.0493
+  \item Because the P-value is greater than or equal to the significance level of $\alpha = 0.01$, we fail to reject $H_0$. We cannot reject the claim that birth weights of girls have the same standard deviation as birth weights of boys.
+\end{enumerate}
+
+
+\problem{10}
+\begin{enumerate}[label=\alph*.]
+  \item $H_0: \sigma = 14.1$
+  \item $H_1: \sigma < 14.1$
+  \item $X^2 = 11.311$
+  \item P-value = 0.0111
+  \item Because the P-value is greater than or equal to the significance level of $\alpha = 0.01$, we fail to reject $H_0$. We cannot support the claim that this class has less variation than other past classes. A lower standard deviation does not suggest that this last class is doing better.
+\end{enumerate}
+
+
+\problem{15}
+\begin{enumerate}[label=\alph*.]
+  \item $H_0: \sigma = 55.93 \text{~sec}$
+  \item $H_1: \sigma \ne 55.93 \text{~sec}$
+  \item $X^2 = 20.726$
+  \item P-value = 0.0084
+  \item Because the P-value is less than the significance level of $\alpha = 0.01$, we reject $H_0$. Service times at McDonald's appear to have more variation than service times at Wendy's. McDonald's should probably take action to reduce the variation.
+\end{enumerate}
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+
+\message{ !name(Book_Assignment_08.4.tex) !offset(-84) }
