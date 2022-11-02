@@ -1,0 +1,112 @@
+\documentclass[12pt,fleqn]{article}
+\usepackage{
+  amsmath,
+  amssymb,
+  booktabs,
+  geometry,
+  graphicx,
+  microtype,
+  parskip,
+  caption,
+}
+\usepackage[shortlabels]{enumitem}
+
+\geometry{margin=3cm}
+
+% equation line spacing
+\setlength{\jot}{0.5cm}
+
+% meta data
+\newcommand{\chapter}{9}
+\newcommand{\authorname}{Amo DelBello}
+\newcommand{\classdescription}{MATH 1350-D2}
+\newcommand{\classname}{Introduction to Statistics, Fall 2022}
+\newcommand{\assignment}{\chapter\ All Review Assignment}
+
+\newcommand{\problem}[1]{\vspace{5ex}\section*{\chapter-#1}}
+\newcommand{\thead}[1]{\textnormal{\textbf{#1}}}
+\newcommand{\tvspace}{\vspace{.25cm}}
+
+\title{\classdescription\ \\ \classname\ \\ $\ $ \\ \assignment}
+\author{\authorname}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+
+\problem{1}
+Results obtained by using Statdisk Hypothesis Testing: Proportion Two Samples
+\begin{itemize}
+\item $H_0: p_1 = p_2$, $H_1: p_2 > p_1$
+\item Test Statistic, z: -3.49
+\item Critical z: -1.64
+\item P-Value: 0.00024
+\end{itemize}
+As the P-Value is less than the significance level we reject the null hypothesis and conclude that people are more likely to spend money when possessing smaller denominations.
+
+\problem{2}
+90\% Confidence Interval: $-0.528 < p_1 - p_2 < -0.206$
+
+Because the confidence interval does not include zero, and the entire interval is less than zero, we arrive at the same conclusion from Exercise 1.
+
+
+\problem{3}
+Results obtained by using Statdisk Hypothesis Testing: Mean Two Independent Samples
+\begin{itemize}
+\item 95\% Confidence Interval: $-25.33cm < \mu_1 - \mu_2 < -7.51$
+  \item We conclude that, with a 95\% confidence interval, the difference in magnitude between the heights of men and women lies between the interval of 7.51 cm and 25.33 cm.
+\end{itemize}
+
+
+\problem{4}
+\begin{itemize}
+\item $H_0: p_1 = p_2$, $H_1: p_2 > p_1$
+\item Test Statistic, t: -4.001
+\item Critical t: -2.67
+\item P-Value: 0.0008
+\end{itemize}
+As the P-Value is less than the significance level we reject the null hypothesis and conclude that women have heights with a mean that is less than the mean height of men.
+
+
+\problem{5}
+Results obtained by using Statdisk Hypothesis Testing: Mean Matched Pairs
+\begin{itemize}
+\item $H_0: \mu_d = 0, $, $H_1: \mu_d > 0$
+\item Test Statistic, t: 6.37
+\item Critical t: 2.72
+\item P-Value: 0.00003
+\end{itemize}
+As the P-Value is less than the significance level we reject the null hypothesis and conclude that there is sufficient evidence to support the claim that captopril is effective in lowering systolic blood pressure.
+
+
+\problem{6}
+Results obtained by using Statdisk Hypothesis Testing: Mean Two Independent Samples
+\begin{itemize}
+\item $H_0: \mu_1 = \mu_2, $, $H_1: \mu_1 > \mu_2$
+\item Test Statistic, t: 2.879
+\item Critical t: 2.376
+\item P-Value: 0.0026
+\end{itemize}
+As the P-Value is less than the significance level we reject the null hypothesis and conclude that there is sufficient evidence to support the claim that ``stress decreases the amount recalled.''
+
+
+
+\problem{7}
+Results obtained by using Statdisk Hypothesis Testing: Mean Two Independent Samples
+\begin{itemize}
+\item $H_0: \mu_d = 0, $, $H_1: \mu_d > 0$
+\item Test Statistic, t: 14.061
+\item Critical t: 2.015
+\item P-Value: 0.00002
+\end{itemize}
+As the P-Value is less than the significance level we reject the null hypothesis and conclude that flights scheduled one day in advance cost more than flights scheduled 30 days in advance. An effective strategy in saving money when flying is to opt for booking flights 30 days in advance over booking flights 1 day in advance when given a choice between the two.
+
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
